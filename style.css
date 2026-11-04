@@ -1,7 +1,55 @@
+*{
+    font-family: "Deltarune Regular";
+}
+
+header{
+    height: 100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: greenyellow;
+}
+
+.header__name{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__name__h2{
+    margin: 0px;
+}
+
+.header__navigation{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__navigation__nav__ul{
+    align-self: right;
+    justify-content: right;
+}
+
+.header__navigation__nav__ul__li{
+    list-style: none;
+    display: inline;
+    padding-right: 15px;
+}
+
+.header__navigation__nav__ul__li__button{
+    background-color: hsla(308, 100%, 50%, 1);
+}
+
 body{
     margin: 0px;
-    font-family: "Deltarune Regular";
     background-color: hsla(308, 100%, 50%, 1);
+}
+
+a{
+    color: blue;
 }
 
 #hero {
@@ -12,11 +60,51 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-#content {
-    display: flex;
+.content {
+    display: grid;
+    grid-template-columns: 60%;
     justify-content: center;
-    flex-direction: column;
     font-size: 2rem;
+    text-align: center;
+}
+
+.content__container{
+    margin: 30px;
+}
+
+.content__container__button{
+    background-color: greenyellow;
+    font-size: 2rem;
+}
+
+.content__container__list{
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content__container__list__button{
+    background-color: greenyellow;
+    font-size: 1.5rem;
+}
+
+.content__container__p{
+    margin: 0px;
+    padding: 0px;
+}
+
+#rick {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+@media (max-width: 750px){
+    .content {
+        grid-template-columns: 100%;
+    }
 }

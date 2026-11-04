@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="/main.js"></script>
         <link rel="stylesheet" href="/style.css">
         <link href="https://db.onlinewebfonts.com/c/e17c91a180915ab790be0df8ba32654a?family=Deltarune+Regular" rel="stylesheet">
     </head>
     <body>
-        <div id = "hero">
-            <h1">Temir Chidzhiev</h1>
+        <header id ="header">
+            <div class = "header__name">
+                <h2 class = "header__name__h2">Temir ChiDzhiev</h2>
+            </div>
+            <div class="header__navigation">
+                <nav class = "header__navigation_nav">
+                    <ul class = "header__navigation__nav__ul">
+                        <li class = "header__navigation__nav__ul__li"><a href="https://github.com/Capy-29">GitHub</a></li>
+                        <li class = "header__navigation__nav__ul__li"><button class = "header__navigation__nav__ul__li__button" onclick="rickTime()">>>Click Me<<</button></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <img id="rick" src="https://media1.tenor.com/m/x8v1oNUOmg4AAAAd/rickroll-roll.gif">
+        <div id="hero">
+            <h1">Temir ChiDzhiev</h1>
         </div>
-        <div id = "content">
-            <p>I am.. I did.. I like.. </p>
-            <p>Visit my GitHub!</p>
+        <div class = "content">
+            <div class = "content__container">
+                <p class = "content__container__p">I am currently a sophomore at Staten Island Technical High School. I live in Brooklyn, so I take bus to school.</p>
+            </div>
+            <div class = "content__container">
+                <p class = "content__container__p">I like:</p>
+                <ul class = "content__container__list">
+                    <li>Black tea</li>
+                    <li>Pizza</li>
+                    <li>This Button: <button class = "content__container__list__button" onclick="rickTime()">>>Click Me<<</button></li>
+                </ul>
+            </div>
+            <div class = "content__container">
+                <p class = "content__container__p">My schedule:</p>
+                <ol class = "content__container__list">
+                    <li>AP World</li>
+                    <li>Geometry</li>
+                    <li>Physics</li>
+                    <li>Gym</li>
+                    <li>Russian</li>
+                    <li>Lunch</li>
+                    <li>English</li>
+                    <li>APCS</li>
+                    <li>CAD</li>
+                </ol>
+            </div>
+            <div class = "content__container">
+                <a href="https://github.com/Capy-29"><p>Visit my GitHub!</p></a>
+            </div>
+            <div class = "content__container">
+                <button class = "content__container__button" onclick="rickTime()">>>Click Me<<</button>
+            </div>
         </div>
     </body>
 </html>
